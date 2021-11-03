@@ -5,7 +5,7 @@ Future<int>
 ```
 닫혀있는 틀이라 표현하며 틀 안에서 then 메소드를 통해 int 값을, catchError 메소드를 통해 error 값 반환을 준비한다.
 아래와 같이 형식을 정의할 수 있다.
-```
+```dart
 Future<int> future = getFuture();
 
 future.then((value) => handleValue(value))
@@ -14,7 +14,7 @@ future.then((value) => handleValue(value))
 
 ## async / await
 Future를 조금 더 용이하게 다루기 위한 비동기 처리로, 이 때 async 함수는 무조건 Future를 반환해야한다.
-```
+```dart
 Future<CreateData> createData() async {
   final id = await _loadId();
   final data = await _fetchData(id);
