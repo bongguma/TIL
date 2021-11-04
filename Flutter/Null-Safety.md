@@ -10,7 +10,7 @@ int firstNum = 0; // 이와 같이 초기화를 진행해주지 않으면 에러
 
 class ExampleClass {
 	static int staticVar = 1;	// 위와 동일하게 초기화 필요 
-							// someClass 생성자 진입 전 초기화 진행 시에는 초기화를 별도로 진행하지 않아도 됨.
+					// someClass 생성자 진입 전 초기화 진행 시에는 초기화를 별도로 진행하지 않아도 됨.
 	int ExampleFunc(int num) {
 		int numResult;	// 지역변수 경우에는 변수 사용 전에만 초기화 하면 된다.
 		numResult = 3; 
