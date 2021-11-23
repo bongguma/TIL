@@ -79,8 +79,18 @@ Get.to(ExamplePage());	// Getx에서 일반적인 페이지 이동
 Get.to(ExamplePage(), transition: Transition.downToUp);	// 페이지 전환 효과를 이용한 페이지 이동
 
 /* 인수 받아오기 */
+// 첫 번째 방법
 Get.to(ExamplePage(), arguments: 'Hello');	// 페이지 이동 시, 인수도 함께 전달
-print(Get.argument); 	// 다음 페이지에서 전달받은 인수 사용하는 방
+print(Get.arguments); 	// 다음 페이지에서 전달받은 인수 사용하는 방
+
+// 두 번째 방법
+Get.to(ExamplePage(), arguments: {data1 : ''. data2 : ''});	// 페이지 이동 시, 인수도 함께 전달
+print(Get.arguments['data1']]);
+
+
+// 세 번째 방법
+Get.to(ExamplePage(), arguments: ClassData());	// 페이지 이동 시, 인수도 함께 전달
+print(Get.arguments as ClassData());
 
 /* 동적 인수 url로 받아오기 */
 Get.offAllNamed('/ExamplePage?device=phone');
