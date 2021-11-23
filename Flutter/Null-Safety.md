@@ -61,5 +61,27 @@ class ExampleClass{
 ```
    
  + required
+Null-Safety 이후,
+```dart
+void main() {
+	print(add());
+}
+
+/* + 인자값이 null에 대해 따로 대응을 해주지 않아 컴파일 에러
+   + 변수타입 앞에 required 키워드를 추가해주어야 한다.	
+ */
+ 
+// 아래와 같은 인자 값 설정 시 오류 
+	int sum = a + b;
+	return sum;
+}
+
+
+int add({required int a, required int b}){
+	int sum = a + b;
+	return sum;
+}
+```
+
 
  
