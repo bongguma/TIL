@@ -66,7 +66,7 @@ BaseOptions({
 
 )
 ```
--> options을 활용해 더욱 디테일한 서버 통신이 가    
+-> options을 활용해 더욱 디테일한 서버 통신이 가능하다.    
 -> Dio 객체를 생성한 후, BaseOptions를 통해 공통적이 파라미터 값을 사용할 수 있겠금 한다.    
    
 __3. Interceptors__   
