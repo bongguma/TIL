@@ -96,7 +96,7 @@ class InterceptorExample {
 -> interceptor 자체는 클라이언트와 서버 사이에서 통신하는 역할로, 활용하여 요청/응답/오류에 대한 핸들링 및 반복적인 작업 처리   
    (ex) 토큰 유효성 즉 자동로그인 또는 로그 처리   
    
-   * Secure Storage *
+   *Secure Storage*
    - flutter secure storage는 기기의 보안 저장소를 이용할 수 있겠금 하는 라이브러리이다.
    - SharedPreferences와 다르게 민감한 정보들을 기기에 저장해야할 때 사용되며, 흔히 자동로그인에 사용된다. (토큰 값을 저장해두고는 한다.)   
    
